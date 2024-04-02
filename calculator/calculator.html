@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class = "container mt-5">
+    <div class = "row">
+      <!-- First Number BOX -->
+      <div class = "col-md-4">
+        <div class = "form-group">
+          <label for="number1">Number 1</label>
+          <input type="text" class ="form-control" id="number1">
+        </div>
+      </div>
+      <!-- Calculation BOX -->
+      <div class ="col-md-4">
+        <div class ="form-group">
+          <label for="operation">Operation</label>
+          <select class ="form-control" id="operation">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+          </select>
+        </div>
+      </div>
+      <!-- Second Number BOX -->
+      <div class ="col-md-4">
+        <div class ="form-group">
+          <label for="number2">Number 2</label>
+          <input type="text" class ="form-control" id="number2">
+        </div>
+      </div>
+    </div>
+    <div class ="row">
+      <!-- Click Button -->
+      <div class ="col-md-12">
+        <button type="button" class ="btn btn-primary" onclick="calculate()">Calculate</button>
+      </div>
+    </div>
+    <div class ="row mt-3">
+      <!-- Showing Result -->
+      <div class ="col-md-12">
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
